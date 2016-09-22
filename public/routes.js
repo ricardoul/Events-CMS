@@ -20,11 +20,21 @@ angular.module('EventCMS')
         templateUrl: 'addevent.html',
         controller: 'AddCtrl',
     })
+    .state('login', {
+        url: '/login',
+        templateUrl: 'login.html',
+        controller: 'LoginCtrl',
+    })
     .state('editEvent', {
         url: '/edit',
         templateUrl: 'editevent.html',
         controller: 'EditCtrl',
         params: {passId: ""}
+    })
+    .state('register', {
+        url: '/register',
+        templateUrl: 'register.html',
+        controller: 'RegisterCtrl'
     })
     .state('about', {
         url: '/about',
